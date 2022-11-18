@@ -1,0 +1,93 @@
+body,
+html {
+    font: 16px/1.4 Georgia, serif;
+    background:#4CAF50;
+}
+
+@media only screen and (max-width: 500px) {
+    body,
+    html {
+        font-size: 10px;
+    }
+}
+
+.page {
+    max-width: 600px;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    user-select: none;
+}
+
+h1 {
+    font: 2rem/1.2 sans-serif;
+    margin-bottom: 1em;
+}
+
+.game {
+    &Shuffle {
+        pointer-events: none;
+        opacity: 0.8;
+    }
+}
+
+.fifteen {
+    width: 100%;
+    padding-bottom: 100%;
+    background: #FFA000;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    .item {
+        position: absolute;
+        outline: none;
+        left: 0;
+        top: 0;
+        width: 25%;
+        height: 25%;
+        margin: 0;
+        padding: 0;
+        border-color: #E040FB;
+        background: url('../img/pepoclown.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 3rem;
+        cursor:pointer;
+        transition: transform 0.4s, filter 0.5s;
+
+        &Val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 84%;
+            height: 84%;
+            margin: 8%;
+            color: #173418;
+            box-shadow: inset 0 0 0 2px #2196F3;
+        }
+    }
+
+    &Winner {
+        .item {
+            background: url('../img/pepeclap-pepe.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    
+}
+
+.button {
+    color: #fff;
+    background: #000;
+    font: 1.2rem/1.4 sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 1em 2em;
+
+    &:hover {
+        background: #922ec5;
+    }
+}
+

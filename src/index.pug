@@ -1,0 +1,19 @@
+doctype html
+html(lang="en") 
+  head
+    meta(charset="utf-8")
+    title PepoClown TagGame
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./css/reset.css")
+    link(rel="stylesheet" href="./css/index.styl")
+  body
+    - const values = new Array(16).fill(0).map((_item, i) => i + 1);
+    .page
+      h1 PepoClown TagGame Pyatnashki
+      .game#game
+        .fifteen#fifteen
+          each val in values
+            button.item(data-matrix-id=val)
+              span.itemVal= val
+        button.button#shuffle mix mix mix
+    script(type="module", src="./js/index.js")
