@@ -1,3 +1,3 @@
-# Tag Game in pepo style
+# Tag Game, Pyatnashki.
 
 - Test project using JS, Pug, Stylus.
